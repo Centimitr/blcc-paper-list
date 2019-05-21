@@ -5,7 +5,7 @@ const ret = str => `${str}\r`;
 (async () => {
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
-    await page.goto('http://blockchain.whu.edu.cn/blockchainpapers/2018/0115/67.html');
+    await page.goto('http://blockchain.whu.edu.cn/blockchainpapers/2019/0124/132.html');
 
     const list = await page.evaluate(() => {
         const children = document.querySelector('ol').children;
